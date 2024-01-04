@@ -1,0 +1,33 @@
+{
+    "globals": {
+        "process": true
+    },
+    "env": {
+        "node": true,
+        "commonjs": true,
+        "browser": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "semi": "warn",
+        "curly": "warn",
+        "indent": ["warn", 2],
+        "prefer-const": "warn",
+        "no-unused-vars": ["warn"],
+        "no-var": ["error"],
+        "no-const-assign": "error",
+        "space-in-parens": ["warn", "never"],
+        "comma-spacing": ["warn", { "before": false, "after": true }],
+        "no-multi-spaces": "warn",
+        "space-before-blocks": "warn",
+        "space-before-function-paren": ["warn", { "anonymous": "always", "named": "always", "asyncArrow": "always"}],
+        "key-spacing": ["warn", { "mode": "strict" }],
+        "no-process-env": "off",
+        "no-constant-condition": "off"
+    }
+}
